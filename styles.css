@@ -3,3 +3,18 @@
 @media(max-width:600px){.hero{padding-top:19px;padding-bottom:19px}.brand-art{width:104px;height:104px;margin-bottom:13px}.hero h1{font-size:27px}.intro{font-size:12px}.book{grid-template-columns:40% 60%;min-height:220px;border-radius:14px}.book-visual{padding:24px 19px}.cover{max-height:177px}.book-content{padding:20px 17px 20px 5px}.book h3{font-size:23px}.eyebrow{font-size:9px;letter-spacing:.9px;margin-bottom:8px}.hook{font-size:12px;margin-bottom:11px}.amazon{padding:10px;font-size:11px}.purchase{gap:8px}.books{gap:13px}}
 @media(max-width:350px){.wrap{width:calc(100% - 24px)}.book h3{font-size:21px}.book-visual{padding:22px 15px}.book-content{padding-right:12px}.amazon{font-size:10px;padding-inline:8px}.hero h1{font-size:25px}.hook{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.book:hover{transform:none}.book:hover .cover{transform:rotate(-7deg) rotateY(-13deg)}.sand:hover .cover{transform:rotate(7deg) rotateY(-13deg)}}
+/* Catalogue mobile compact : quatre cartes en colonne, sans masquer de livre. */
+.teal{--tone:#173f49;--tone-light:#326a73;--accent:#ead394}.ochre{--tone:#785238;--tone-light:#a77b52;--accent:#f8e1b4}
+@media(max-width:600px){
+ .hero{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left;padding:12px 0 13px}
+ .brand-art{width:66px;height:66px;margin:0;flex-shrink:0}.hero h1{font-size:22px;margin-bottom:5px}.intro{font-size:11px}
+ .section-heading{margin-bottom:8px}.section-heading h2{font-size:10px;letter-spacing:1px}
+ .books{gap:9px}.book{grid-template-columns:27% 73%;min-height:0;border-radius:12px}
+ .book-visual{padding:13px 12px}.cover{max-height:109px;max-width:100%;box-shadow:3px 1px 0 #dfcdb5,4px 2px 0 #bb9e7e,8px 9px 12px #1a100b55}
+ .book-content{padding:10px 12px 10px 3px}.book h3{font-size:19px;line-height:1.09;margin-bottom:4px;text-wrap:initial}
+ .eyebrow{font-size:8px;letter-spacing:.8px;margin-bottom:4px}.hook{font-size:11px;line-height:1.3;margin-bottom:6px}
+ .author{display:none}.purchase{flex-direction:row;align-items:center;gap:7px;flex-wrap:wrap}.format-note{font-size:9px;letter-spacing:.6px;flex-shrink:0}
+ .amazon{width:auto;flex:1;min-height:36px;padding:5px 9px;font-size:11px;gap:4px}.amazon span{font-size:16px}
+ .formats{flex-basis:100%}.footer{padding:12px 0 15px}.footer small{font-size:10px}
+}
+@media(max-width:350px){.hero h1{font-size:19px}.brand-art{width:58px;height:58px}.intro{font-size:10px}.book h3{font-size:17px}.book-content{padding-right:9px}.book-visual{padding-inline:10px}.amazon{font-size:10px;padding-inline:7px}.hook{font-size:10px}}

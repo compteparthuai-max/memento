@@ -20,6 +20,24 @@ window.MEMENTO = {
       audience: 'Pour une maman, et toutes les générations à venir.',
       image: 'maman.webp', featured: false, badge: null, order: 2, theme: 'sand',
       available: true, collection: null, formats: [{ name: 'Relié', amazonUrl: 'https://www.amazon.fr/dp/B0HFXSJLCK' }], amazonUrl: 'https://www.amazon.fr/dp/B0HFXSJLCK'
+    },
+    {
+      id: 'coran-adultes', title: '114 jours avec le Coran',
+      subtitle: 'Édition adolescents & adultes', category: ['Spiritualité', 'Coloriage'], author: 'Amel Nour',
+      emotionalHook: 'Une sourate par jour à découvrir et à colorier.',
+      description: '114 sourates et 114 grandes illustrations à découvrir et à colorier, dans une édition pour adolescents et adultes.',
+      audience: 'Pour les adolescents et les adultes.', image: 'coran-adultes.webp',
+      featured: false, badge: null, order: 3, theme: 'teal', available: true,
+      formats: [{ name: 'Broché', amazonUrl: 'https://www.amazon.fr/dp/B0HL3X1T1G' }], amazonUrl: 'https://www.amazon.fr/dp/B0HL3X1T1G'
+    },
+    {
+      id: 'coran-enfants', title: '114 jours avec le Coran',
+      subtitle: 'Édition découverte enfant', category: ['Enfants', 'Spiritualité'], author: 'Amel Nour',
+      emotionalHook: '16 sourates pour commencer.',
+      description: 'Une édition découverte pour les enfants : 16 sourates pour commencer, à découvrir et à colorier.',
+      audience: 'Pour découvrir et colorier avec les enfants.', image: 'coran-enfants.webp',
+      featured: false, badge: null, order: 4, theme: 'ochre', available: true,
+      formats: [{ name: 'Broché', amazonUrl: 'https://www.amazon.fr/dp/B0HL6FKN6W' }], amazonUrl: 'https://www.amazon.fr/dp/B0HL6FKN6W'
     }
   ]
 };

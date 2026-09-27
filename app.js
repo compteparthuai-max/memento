@@ -10,7 +10,8 @@
     root.replaceChildren();
     const visible = books.filter(book => filter==='Tous' || (book.category || []).includes(filter));
     for(const [index,book] of visible.entries()) {
-      const article=el('article',`book ${book.theme==='rose'?'rose':'sand'} ${book.featured?'featured':''}`); article.id=book.id;
+      const theme=['rose','sand','teal','ochre'].includes(book.theme)?book.theme:'sand';
+      const article=el('article',`book ${theme} ${book.featured?'featured':''}`); article.id=book.id;
       const visual=el('div','book-visual');
       if(book.badge) visual.append(el('span','book-badge',book.badge));
       if(book.image) {const img=el('img','cover'); img.src=book.image; img.alt=`Couverture de ${book.title}`; img.width=600; img.height=900; img.loading=index===0?'eager':'lazy'; visual.append(img);}
