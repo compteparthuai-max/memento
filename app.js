@@ -3,7 +3,7 @@
   const root = document.querySelector('#books');
   const books = [...config.books].sort((a,b) => Number(b.featured)-Number(a.featured) || (a.order ?? 100)-(b.order ?? 100));
   const el = (tag, cls, text) => { const node = document.createElement(tag); if(cls) node.className=cls; if(text) node.textContent=text; return node; };
-  // Les événements locaux restent disponibles ; analytics.js gère l'envoi et le consentement.
+  // Les événements locaux restent disponibles ; analytics.js centralise leur envoi.
   const track = (event, book, format=null, extra={}) => window.dispatchEvent(new CustomEvent('memento:analytics', {detail:{event, bookId:book?.id ?? null, format, parameters:{...(book ? {book_id:book.id, book_name:book.title, ...(format ? {book_format:format} : {})} : {}), ...extra}}}));
   const safeUrl = value => { try {const url = new URL(value); return url.protocol==='https:' ? url.href : null;} catch {return null;} };
   let observer;
